@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <title>UI Admin - Clean and responsive administration panel</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Clean and responsive administration panel">
+    <meta name="keywords" content="Admin,Panel,HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Erik Campobadal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="node_modules/uikit/dist/css/uikit-rtl.min.css"/>
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="css/my-style.css"/>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/uikit/dist/js/uikit.js"></script>
+    <script type="text/javascript" src="node_modules/uikit/dist/js/uikit-icons.js"></script>
+</head>
+<body>
+<div class="uk-offcanvas-content">
+    <div uk-sticky class="uk-navbar-container">
+        <div class="uk-container uk-container-expand">
+            <nav uk-navbar>
+                <div class="uk-navbar-right">
+                    <a id="sidebar_toggle" class="uk-navbar-toggle uk-margin-small-right" uk-navbar-toggle-icon
+                       uk-toggle="target: #offcanvas-overlay-slide"></a>
+                    <a href="#" class="uk-navbar-item uk-logo">خدمات هوشمند آینده</a>
+                </div>
+                <div class="uk-navbar-left uk-light">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a href="#">فرزاد مهانیان &nbsp;<span class="ion-ios-arrow-down"></span></a>
+                            <div uk-dropdown="pos: bottom-right; mode: click; offset: -17;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header">تنظیمات</li>
+                                    <li><a href="#">ویرایش پروفایل</a></li>
+                                    <li class="uk-nav-header">عملیات</li>
+                                    <li><a href="#">خروج</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="offcanvas-overlay-slide" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas uk-offcanvas-overlay">
+        <div class="uk-offcanvas-bar uk-offcanvas-slide">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div>
+                <center>
+                    <div class="user">
+                        <img id="avatar" width="100" class="uk-border-circle" src="images/avatar.jpg"/>
+                        <div class="uk-margin-top"></div>
+                        <h4 id="name" class="uk-text-truncate m0">فرزاد مهانیان</h4>
+                        <h6 id="email" class="uk-text-truncate">f.mahanian@gmail.com</h6>
+                        <span id="status" data-enabled="true" data-online-text="آنلاین" data-away-text="Away"
+                              data-interval="10000" class="uk-margin-top uk-label uk-label-success"></span>
+                    </div>
+                    <br/>
+                </center>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-nav-header">امکانات</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> لیست سفارشات</a></li>
+
+                    <li class="uk-nav-header">صفحات</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> ورود</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> ثبت نام</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-padder content-background">
+        <div class="uk-section-small uk-section-default header">
+            <div class="uk-container uk-container-large">
+                <h3><span uk-icon="icon: money"></span> داشبورد</h3>
+                <h3><span uk-icon="icon: user"></span> داشبورد</h3>
+            </div>
+        </div>
+        <div class="uk-section-small">
+            <div class="uk-container uk-container-large">
+                <div uk-grid class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-4@xl">
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <span class="statistics-text">کاربران جدید</span><br/>
+                            <span class="statistics-number">
+                                    ۶۷۵۷
+                                    <span class="uk-label uk-label-success">
+                                        ۷% <span class="ion-arrow-up-c"></span>
+                                    </span>
+                                </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <span class="statistics-text">تعداد سفارشات</span><br/>
+                            <span class="statistics-number">
+                                    ۵۴۳۳۴
+                                    <span class="uk-label uk-label-danger">
+                                        ۱۳% <span class="ion-arrow-down-c"></span>
+                                    </span>
+                                </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <span class="statistics-text">مجموع پرداخت‌ها</span><br/>
+                            <span class="statistics-number">
+                                    ۱۲۳
+                                    <span class="uk-label uk-label-success">
+                                        ۲۷% <span class="ion-arrow-up-c"></span>
+                                    </span>
+                                </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <span class="statistics-text">سود ماهانه</span><br/>
+                            <span class="statistics-number">
+                                    ۶۵۴۰۰ ریال
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div uk-grid class="uk-child-width-1-1@s uk-child-width-1-2@l">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-header">
+                                نمودار ماهانه
+                            </div>
+                            <div class="uk-card-body">
+                                <canvas id="chart1"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-header">
+                                فروش روزانه
+                            </div>
+                            <div class="uk-card-body">
+                                <canvas id="chart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Load More Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"
+        integrity="sha256-UGwvyUFH6Qqn0PSyQVw4q3vIX0wV1miKTracNJzAWPc=" crossorigin="anonymous"></script>
+<script src="js/charts.js"></script>
+</body>
+</html>

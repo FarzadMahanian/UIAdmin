@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <title>Login | Smart Service</title>
+
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/my-style.css" />
+
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/uikit.min.js" ></script>
+	    <script src="js/uikit-icons.min.js" ></script>
+        <script src="js/my-script.js"></script>
+    </head>
+    <body>
+
+    <div id="login-page">
+        <div class="uk-section-large">
+            <div class="uk-margin">
+                <img src="images/logo.svg" class="uk-align-center">
+            </div>
+            <div class="uk-container uk-container-large">
+                <div class="uk-flex uk-flex-center">
+                    <div class="uk-width-1-1@s uk-width-3-5@l uk-width-1-3@xl" style="perspective: 1300px">
+                        <div id="username-card" class="uk-card uk-card-default">
+                            <div class="uk-card-body">
+                                <h3 class="uk-form-label">اگر نام کاربری دارید وارد شوید</h3>
+                                <form method="POST">
+                                    <fieldset class="uk-fieldset">
+                                        <div class="uk-margin labeled-input">
+                                            <div class="uk-position-relative uk-margin">
+                                                <label for="login-username">نام کاربری یا شماره تلفن</label>
+                                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                <input id="login-username" class="uk-input" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-margin uk-clearfix">
+                                            <button type="button" class="uk-button uk-button-primary uk-float-left" id="go-to-password">
+                                                <span href="index.html" uk-icon="icon: chevron-right"```>بعدی</span>
+                                            </button>
+                                        </div>
+
+                                        <hr class="uk-divider-icon uk-clearfix">
+
+                                        <center>
+                                            <label class="uk-form-label uk-clearfix">چنانچه حساب کاربری ندارید ثبت نام کنید</label>
+                                            <a href="register.html" class="uk-button uk-button-default uk-margin">
+                                                <strong>ایجاد حساب کاربری</strong>
+                                            </a>
+                                        </center>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div id="password-card" class="uk-card uk-card-default ">
+                            <div class="uk-card-body">
+                                <form method="POST">
+                                    <fieldset class="uk-fieldset">
+                                        <div class="uk-margin">
+                                            <div class="uk-position-relative uk-margin labeled-input">
+                                                <label for="login-password">شناسه عبور</label>
+                                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                <input id="login-password" class="uk-input" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-margin uk-clearfix">
+                                            <a class="uk-button uk-button-primary uk-float-left" href="index.html">
+                                                <span href="index.html" uk-icon="icon: chevron-right">ورود</span>
+                                            </a>
+                                        </div>
+
+                                        <hr class="uk-divider-icon uk-clearfix">
+
+                                        <center>
+                                            <label class="uk-form-label uk-clearfix">چنانچه حساب کاربری ندارید ثبت نام کنید</label>
+                                            <a href="register.html" class="uk-button uk-button-default uk-margin">
+                                                <strong>ایجاد حساب کاربری</strong>
+                                            </a>
+                                        </center>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
